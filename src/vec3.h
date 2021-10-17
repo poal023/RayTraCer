@@ -1,5 +1,6 @@
 #ifndef VEC3_H
 #define VEC3_H
+#include "utils.h"
 
 struct vec3{
     double x,y,z;
@@ -17,5 +18,10 @@ double dotProduct(struct vec3 V1, struct vec3 V2);
 struct vec3 crossProduct(struct vec3 V1, struct vec3 V2);
 struct vec3 unitVec(struct vec3 Vector);
 
+struct vec3 randomVectorInUnitSphere();
+struct vec3 randomVectorInRange(double min, double max);
+struct vec3 randomVector();
+
+double lengthSquared(struct vec3 Vector);
 double vecMagnitude(struct vec3 Vector);
 #endif

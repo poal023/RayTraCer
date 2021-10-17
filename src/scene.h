@@ -5,6 +5,6 @@
 struct scene{
     size_t numObjects;
     struct sphere* spheres;
-}
+};
 
 #endif

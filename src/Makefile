@@ -2,7 +2,7 @@ CC = gcc
 
 CFILES = $(wildcard *.c)
 OBJFILES = $(CFILES:.c=.o)
-CLAGS = -Wall
+CLAGS = -Wall -ggdb
 LIBFLAGS = -lm
 
 rtMain : $(OBJFILES) 
@@ -21,3 +21,5 @@ utils.o : utils.c utils.h
 
 clean:
 	rm $(OBJFILES) rtMain
+
+

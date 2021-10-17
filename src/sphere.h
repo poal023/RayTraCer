@@ -11,6 +11,6 @@ struct sphere {
 };
 
 
-int intersectSphere(struct sphere *S, struct ray *R, double tmin, double tmax);
+int intersectSphere(struct sphere *S, struct ray *R, double tmin, double tmax, struct hitRecord *HR);
 
 #endif

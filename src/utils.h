@@ -15,5 +15,6 @@
 
 double degreesToRadians(double degrees);
 double randomDouble();
-
+double randomDoubleInRange(double min, double max);
+double clamp(double x, double min, double max);
 #endif
