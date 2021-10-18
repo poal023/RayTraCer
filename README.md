@@ -17,5 +17,5 @@ Although this project will follow Raytracing in One Weekend to an extent, it als
 
 ## Some Current Output Examples
 
-![Example 1](examples/Example1.ppm?raw=true)
-![Example 2](examples/Example2.ppm?raw=true)
+![Example 1](examples/Example1.jpg?raw=true)
+![Example 2](examples/Example2.jpg?raw=true)
