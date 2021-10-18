@@ -2,7 +2,7 @@ CC = gcc
 
 CFILES = $(wildcard *.c)
 OBJFILES = $(CFILES:.c=.o)
-CLAGS = -Wall -ggdb
+CLAGS = -Wall -ggdb -std=c89 -pedantic
 LIBFLAGS = -lm
 
 rtMain : $(OBJFILES) 
@@ -18,6 +18,8 @@ sphere.o : sphere.c sphere.h
 	$(CC) -c sphere.c
 utils.o : utils.c utils.h
 	$(CC) -c utils.c
+material.o : material.c material.h
+	$(CC) -c material.c
 
 clean:
 	rm $(OBJFILES) rtMain

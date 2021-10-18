@@ -4,6 +4,8 @@
 #include "vec3.h"
 #include <math.h>
 #include <stdlib.h>
+#include <string.h>
+
 
 #define INF HUGE_VAL
 #define NEGINF -HUGE_VAL

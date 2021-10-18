@@ -67,3 +67,16 @@ struct vec3 randomVectorInUnitSphere(){
 	}
 }
 
+struct vec3 randomUnitVector(){
+	return unitVec(randomVectorInUnitSphere());
+}
+
+
+int allNearZero(struct vec3 Vector){
+	return ((Vector.x < EPSILON) && (Vector.y < EPSILON) && (Vector.z < EPSILON));
+}
+
+struct vec3 reflection(struct vec3 Vector, struct vec3 unit){
+	return vecSubtraction(Vector, scalarMultiplication(scalarMultiplication(unit,dotProduct(Vector,unit)),2));
+}
+

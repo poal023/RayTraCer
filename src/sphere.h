@@ -4,10 +4,14 @@
 #include "utils.h"
 #include "rays.h"
 #include "hittable.h"
+#include "material.h"
+
+struct hitRecord;
 
 struct sphere {
 	struct vec3 center;
 	double radius;
+	struct material mat;
 };
 
 

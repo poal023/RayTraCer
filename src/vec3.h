@@ -21,6 +21,10 @@ struct vec3 unitVec(struct vec3 Vector);
 struct vec3 randomVectorInUnitSphere();
 struct vec3 randomVectorInRange(double min, double max);
 struct vec3 randomVector();
+struct vec3 randomUnitVector();
+
+int allNearZero(struct vec3 Vector);
+struct vec3 reflection(struct vec3 Vector, struct vec3 unit);
 
 double lengthSquared(struct vec3 Vector);
 double vecMagnitude(struct vec3 Vector);
