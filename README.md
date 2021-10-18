@@ -7,7 +7,7 @@ This project is a derivative work of Raytracing in One Weekend, done in ANSI C. 
 - If make is not installed on your machine, you can install it on either Windows using Chocolatey (```choco install make```) or on Debian-based systems through ```sudo apt install make```
 - Run the makefile through ```make``` while in the ```src/``` directory. 
 
-##Navigating the Repository
+## Navigating the Repository
 
 All .c and .h source files are stored in the ```src/``` directory, while example images will be stored in ```examples/```.
 
@@ -17,5 +17,5 @@ Although this project will follow Raytracing in One Weekend to an extent, it als
 
 ## Some Current Output Examples
 
-![Example 1](examples/Example1.ppm)
-![Example 2](examples/Example2.ppm)
+![Example 1](examples/Example1.ppm?raw=true)
+![Example 2](examples/Example2.ppm?raw=true)
