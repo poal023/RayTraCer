@@ -80,3 +80,9 @@ struct vec3 reflection(struct vec3 Vector, struct vec3 unit){
 	return vecSubtraction(Vector, scalarMultiplication(scalarMultiplication(unit,dotProduct(Vector,unit)),2));
 }
 
+struct vec3 refraction(struct vec3 refRay, struct vec3 normal, double etaEtaPrimeRatio){
+	double cost = min(dotProduct(scalarMultiplication(refRay, -1), normal), 1.0);
+	struct vec3 refRayPerpen = scalarMultiplication(vecAddition(refRay, scalarMultiplication(normal, cost)), etaEtaPrimeRatio);
+	struct vec3 refRayParallel = scalarMultiplication(normal, -1*sqrt(1 - lengthSquared(refRayPerpen)));
+	return vecAddition(refRayPerpen , refRayParallel);
+}

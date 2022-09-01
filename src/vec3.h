@@ -25,6 +25,7 @@ struct vec3 randomUnitVector();
 
 int allNearZero(struct vec3 Vector);
 struct vec3 reflection(struct vec3 Vector, struct vec3 unit);
+struct vec3 refraction(struct vec3 refRay, struct vec3 normal, double etaEtaPrimeRatio);
 
 double lengthSquared(struct vec3 Vector);
 double vecMagnitude(struct vec3 Vector);
