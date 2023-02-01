@@ -15,6 +15,8 @@ All .c and .h source files are stored in the ```src/``` directory, while example
 
 Although this project will follow Raytracing in One Weekend to an extent, it also aims to build off of it by adding in more features such as triangle/polygonal objects, textures, lighting, exportation through JPEG and much more.
 
+If changes are desired, please make a pull request.
+
 ## Output Examples
 
 ![Example 1](examples/Example1.jpg?raw=true)
